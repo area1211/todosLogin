@@ -1,11 +1,9 @@
-package com.todos.todos_login.controller;
+package com.todos.todos_login.admin.service;
 
-import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.List;
@@ -21,7 +19,7 @@ import java.util.Map;
  * 주의사항 : 
  ************************************************************/
 @Controller
-public class PageController {
+public class ServiceController {
 
     @Autowired
     Service service;
