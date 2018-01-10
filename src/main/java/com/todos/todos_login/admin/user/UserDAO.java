@@ -17,7 +17,7 @@ import java.util.Map;
  * 주의사항 : 
  ************************************************************/
 @Mapper
-public interface User {
+public interface UserDAO {
 
     List<Map<String,Object>> list(Map<String, Object> param);
 }

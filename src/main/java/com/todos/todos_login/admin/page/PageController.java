@@ -1,6 +1,6 @@
 package com.todos.todos_login.admin.page;
 
-import com.todos.todos_login.admin.service.Service;
+import com.todos.todos_login.admin.service.ServiceDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,12 +23,12 @@ import java.util.Map;
 public class PageController {
 
     @Autowired
-    Service service;
+    ServiceDAO serviceDAO;
 
     @RequestMapping(value="/hello")
     public String Hello(Model model){
         Map<String,Object> param = new HashMap<>();
-        List<Map<String,Object>> result =  service.list(param);
+        List<Map<String,Object>> result =  serviceDAO.list(param);
 
         System.out.print(result);
 

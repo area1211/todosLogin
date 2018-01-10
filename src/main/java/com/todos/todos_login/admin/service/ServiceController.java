@@ -22,12 +22,12 @@ import java.util.Map;
 public class ServiceController {
 
     @Autowired
-    Service service;
+    ServiceDAO serviceDAO;
 
     @RequestMapping(value="/hello")
     public String Hello(Model model){
         Map<String,Object> param = new HashMap<>();
-        List<Map<String,Object>> result =  service.list(param);
+        List<Map<String,Object>> result =  serviceDAO.list(param);
 
         System.out.print(result);
 

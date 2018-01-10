@@ -22,7 +22,7 @@ import java.util.Map;
 public class UserController {
 
     @Autowired
-    User service;
+    UserDAO service;
 
     @RequestMapping(value="/hello")
     public String Hello(Model model){
